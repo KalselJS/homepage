@@ -11,15 +11,15 @@ import { SITE } from "@config";
 export interface Props {
   currentPage: number;
   totalPages: number;
-  paginatedPosts: CollectionEntry<"blog">[];
+  paginatedPosts: CollectionEntry<"event">[];
 }
 
 const { currentPage, totalPages, paginatedPosts } = Astro.props;
 ---
 
 <Layout title={`Posts | ${SITE.title}`}>
-  <Header activeNav="posts" />
-  <Main pageTitle="Posts" pageDesc="All the articles I've posted.">
+  <Header activeNav="events" />
+  <Main pageTitle="Events" pageDesc="All the articles I've posted.">
     <ul>
       {
         paginatedPosts.map(({ data, slug }) => (
