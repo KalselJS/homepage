@@ -29,52 +29,21 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         Come and meet other developers & industry leaders interested in
         JavaScript and its ecosystem in the South Borneo area.
       </p>
-      <p>
-        Read the blog posts or check
-        <LinkButton
-          className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
-          href="https://github.com/satnaing/astro-paper#readme"
-        >
-          README
-        </LinkButton> for more info.
-      </p>
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
           <div class="social-wrapper">
             <div class="social-links">Social Links:</div>
-            <Socials />
           </div>
         )
       }
     </section>
 
     <Hr />
-
-    {
-      featuredPosts.length > 0 && (
-        <>
-          <section id="featured">
-            <h2>Featured</h2>
-            <ul>
-              {featuredPosts.map(({ data, slug }) => (
-                <Card
-                  href={`/posts/${slug}/`}
-                  frontmatter={data}
-                  secHeading={false}
-                />
-              ))}
-            </ul>
-          </section>
-          {recentEvents.length > 0 && <Hr />}
-        </>
-      )
-    }
-
     {
       recentEvents.length > 0 && (
         <section id="recent-events">
-          <h2>Recent Posts</h2>
+          <h2>Recent Events</h2>
           <ul>
             {recentEvents.map(
               ({ data, slug }, index) =>
@@ -132,11 +101,11 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
   /* ===== Featured & Recent Posts Sections ===== */
   #featured,
-  #recent-posts {
+  #recent-events {
     @apply pb-6 pt-12;
   }
   #featured h2,
-  #recent-posts h2 {
+  #recent-events h2 {
     @apply text-2xl font-semibold tracking-wide;
   }
   .all-posts-btn-wrapper {

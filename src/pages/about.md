@@ -3,34 +3,46 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+We are a group of developers &amp; industry leaders interested in JavaScript.Learn, Share, Use JavaScript as we collaborate as a Kalimantan Selatan JavaScript community.
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
+Bring your questions, your code, and your desire to help, learn & meet some amazing people.The sessions are informal, friendly, and organised with a loose agenda.We have monthly meetups which are normally held on the 2nd or 3rd Friday of any month.
 
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+Meet the Organisers:
 
-<div>
-  <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
-</div>
+**Ridho Assuryadi**
 
-## Tech Stack
+- https://ridhoassuryadi.com
+- https://www.linkedin.com/in/m-ridho/
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+**Muslih Aqad**
 
-## Features
+- https://www.linkedin.com/in/muslihz
 
-Here are certain features of this site.
+**Agus Fikri Suyuthi**
 
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
+- https://www.agusfikri.com/
+- https://id.linkedin.com/in/agusfikri
 
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+## Join Us
+
+Follow our Twitter or updates on our upcoming meetups, as well as news from the JavaScript community. You can also join our Slack and talk with members of community, as well as experts in their field.
+
+- **Discord:** [Join our Discord!](https://kalseljs-join.herokuapp.com/)
+
+## FAQ
+
+### Are KalselJS meetups free to attend?
+
+Yes, you're free to attend!
+
+### Who are the target audiences?
+
+The target audiences are students, developers, programmers, engineers and related professions.
+
+### Can I come even if I haven't RSVP yet?
+
+Our meetups have restricted spaces, thus it's mandatory to RSVP.
+
+### Is it okay to come late?
+
+Yes, just come and join.
