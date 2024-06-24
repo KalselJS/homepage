@@ -13,20 +13,16 @@ const { activeNav } = Astro.props;
 <header>
   <a id="skip-to-content" href="#main-content">Skip to content</a>
   <div class="nav-container">
-    <div class="top-nav-wrap">
-      <a href="/" class="logo whitespace-nowrap">
-        {
-          LOGO_IMAGE.enable ? (
-            <img
-              src={`/assets/${LOGO_IMAGE.svg ? "logo.svg" : "logo.png"}`}
-              alt={SITE.title}
-              width={LOGO_IMAGE.width}
-              height={LOGO_IMAGE.height}
-            />
-          ) : (
-            SITE.title
-          )
-        }
+    <div class="top-nav-wrap items-center">
+      <a href="/" class="logo whitespace-nowrap flex items-center">
+        <img
+          src={`/favicon.png`}
+          alt={SITE.title}
+          width={24}
+          height={24}
+          class="mr-2"
+        />
+        {SITE.title}
       </a>
       <nav id="nav-menu">
         <button
