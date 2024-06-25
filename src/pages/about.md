@@ -27,7 +27,7 @@ Meet the Organisers:
 
 Follow our Twitter or updates on our upcoming meetups, as well as news from the JavaScript community. You can also join our Slack and talk with members of community, as well as experts in their field.
 
-- **Discord:** [Join our Discord!](https://kalseljs-join.herokuapp.com/)
+- **Discord:** [Join our Discord!](https://discord.gg/QUvjtZNkvD)
 
 ## FAQ
 

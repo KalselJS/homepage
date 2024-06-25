@@ -8,7 +8,7 @@ import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
 import Socials from "@components/Socials.astro";
 import getSortedEvents from "@utils/getSortedEvents";
-import { SOCIALS } from "@config";
+import { SOCIALS, SITE } from "@config";
 
 const posts = await getCollection("event");
 
@@ -29,14 +29,21 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         Come and meet other developers & industry leaders interested in
         JavaScript and its ecosystem in the South Borneo area.
       </p>
-      {
-        // only display if at least one social link is enabled
-        socialCount > 0 && (
-          <div class="social-wrapper">
-            <div class="social-links">Social Links:</div>
+      <br />
+      <a
+        href={SITE.discordLink}
+        class="button button--atlas py-3 px-6 me-2 mb-2 text-sm font-medium text-skin-accent focus:outline-none rounded-md focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+      >
+        <span>Join Us!</span>
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee__inner">
+            <span>Let's join us!</span>
+            <span>Let's join us!</span>
+            <span>Let's join us!</span>
+            <span>Let's join us!</span>
           </div>
-        )
-      }
+        </div>
+      </a>
     </section>
 
     <Hr />
