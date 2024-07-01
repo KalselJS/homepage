@@ -100,7 +100,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 * Astro v3
 
-> Check the AstroPaper v3 in [this blog post](https://astro-paper.pages.dev/posts/astro-paper-v3/)
+> Check the AstroPaper v3 in [this blog post](https://astro-paper.pages.dev/events/astro-paper-v3/)
 
 ### Features
 
@@ -183,7 +183,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### ⚠ BREAKING CHANGES
 
-Check the AstroPaper v2 in [this blog post](https://astro-paper.pages.dev/posts/astro-paper-2/)
+Check the AstroPaper v2 in [this blog post](https://astro-paper.pages.dev/events/astro-paper-2/)
 
 * **deps:** Migration of Astro to version 2
 
@@ -271,7 +271,7 @@ Check the AstroPaper v2 in [this blog post](https://astro-paper.pages.dev/posts/
 
 ### Bug Fixes
 
-* fix heading style in posts/<page-num> layouts ([5eeea66](https://github.com/satnaing/astro-paper/commit/5eeea6639e79f93c3d0917bc827dfd37a23d041c))
+* fix heading style in events/<page-num> layouts ([5eeea66](https://github.com/satnaing/astro-paper/commit/5eeea6639e79f93c3d0917bc827dfd37a23d041c))
 * fix missing TailwindCSS dependency ([e7807ab](https://github.com/satnaing/astro-paper/commit/e7807ab94e12898ab85b955132c5d908956c8945)), closes [#6](https://github.com/satnaing/astro-paper/issues/6)
 * show search result only if input is more than one char ([f7fb032](https://github.com/satnaing/astro-paper/commit/f7fb032e604bd704adc19400e000c9584a6fdb43))
 

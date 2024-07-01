@@ -1,7 +1,7 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
 import Events from "@layouts/Events.astro";
-import PostDetails from "@layouts/PostDetails.astro";
+import EventDetails from "@layouts/EventDetails.astro";
 import getSortedEvents from "@utils/getSortedEvents";
 import getPageNumbers from "@utils/getPageNumbers";
 import getPagination from "@utils/getPagination";
@@ -11,14 +11,16 @@ export interface Props {
 }
 
 export async function getStaticPaths() {
-  const posts = await getCollection("event", ({ data }) => !data.draft);
+  const events = await getCollection("event", ({ data }) => !data.draft);
 
-  const postResult = posts.map(post => ({
+  console.log("eventsnya", events);
+
+  const postResult = events.map(post => ({
     params: { slug: post.slug },
     props: { post },
   }));
 
-  const pagePaths = getPageNumbers(posts.length).map(pageNum => ({
+  const pagePaths = getPageNumbers(events.length).map(pageNum => ({
     params: { slug: String(pageNum) },
   }));
 
@@ -38,4 +40,4 @@ const pagination = getPagination({
 });
 ---
 
-{event ? <PostDetails post={event} /> : <Events {...pagination} />}
+{event ? <EventDetails post={event} /> : <Events {...pagination} />}
