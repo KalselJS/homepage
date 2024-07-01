@@ -202,3 +202,57 @@
 		transform: translate3d(var(--move-final), 0, 0);
 	}
 }
+
+.md\:basis-4\/12 {
+  flex-basis: 33.333333%
+}
+
+.md\:basis-8\/12 {
+  flex-basis: 66.666667%
+}
+
+@media (min-width: 768px) {
+  .md\:md\:basis-4\/12 {
+      flex-basis:33.333333%
+  }
+
+  .md\:md\:basis-8\/12 {
+      flex-basis: 66.666667%
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply text-primary-foreground;
+    @apply bg-gradient-to-r bg-clip-text text-transparent;
+    @apply from-slate-800 to-slate-500 dark:from-white dark:to-slate-500;
+  }
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+  }
+  .prose-config {
+    @apply prose prose-slate dark:prose-invert focus:outline-none;
+    @apply prose-headings:font-semibold;
+    @apply prose-a:prose-a-styles;
+    @apply prose-pre:prose-pre-styles;
+    @apply prose-code:prose-code-styles;
+  }
+  .prose-a-styles {
+    @apply focus-ring cursor-pointer rounded-xs decoration-muted transition;
+    @apply text-accent hover:text-accent/75;
+  }
+  .prose-pre-styles {
+    @apply bg-muted text-foreground;
+  }
+  .prose-code-styles {
+    @apply before:content-none after:content-none;
+  }
+  .prose > ul > li > p {
+    @apply my-0;
+  }
+  .prose > ol > li > p {
+    @apply my-0;
+  }
+}
+
+
