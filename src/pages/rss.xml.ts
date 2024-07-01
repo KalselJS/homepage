@@ -1,16 +1,16 @@
 import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
-import getSortedPosts from "@utils/getSortedPosts";
+import getSortedEvents from "@utils/getSortedEvents";
 import { SITE } from "@config";
 
 export async function GET() {
   const posts = await getCollection("event");
-  const sortedPosts = getSortedPosts(posts);
+  const sortedEvents = getSortedEvents(posts);
   return rss({
     title: SITE.title,
     description: SITE.desc,
     site: SITE.website,
-    items: sortedPosts.map(({ data, slug }) => ({
+    items: sortedEvents.map(({ data, slug }) => ({
       link: `posts/${slug}/`,
       title: data.title,
       description: data.description,

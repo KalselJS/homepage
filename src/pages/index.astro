@@ -6,17 +6,13 @@ import Footer from "@components/Footer.astro";
 import LinkButton from "@components/LinkButton.astro";
 import Hr from "@components/Hr.astro";
 import Card from "@components/Card";
-import Socials from "@components/Socials.astro";
 import getSortedEvents from "@utils/getSortedEvents";
-import { SOCIALS, SITE } from "@config";
+import { SITE } from "@config";
 
 const posts = await getCollection("event");
 
 const sortedEvents = getSortedEvents(posts);
-const featuredPosts = sortedEvents.filter(({ data }) => data.featured);
 const recentEvents = sortedEvents.filter(({ data }) => !data.featured);
-
-const socialCount = SOCIALS.filter(social => social.active).length;
 ---
 
 <Layout>
