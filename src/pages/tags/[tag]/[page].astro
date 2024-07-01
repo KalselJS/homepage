@@ -1,6 +1,6 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
-import TagPosts from "@layouts/TagPosts.astro";
+import TagEvents from "@layouts/TagEvents.astro";
 import getUniqueTags from "@utils/getUniqueTags";
 import getPostsByTag from "@utils/getPostsByTag";
 import getPageNumbers from "@utils/getPageNumbers";
@@ -36,9 +36,9 @@ const posts = await getCollection("event", ({ data }) => !data.draft);
 const postsByTag = getPostsByTag(posts, tag);
 
 const pagination = getPagination({
-  posts: postsByTag,
+  events: postsByTag,
   page,
 });
 ---
 
-<TagPosts {...pagination} {tag} {tagName} />
+<TagEvents {...pagination} {tag} {tagName} />
