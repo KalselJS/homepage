@@ -15,9 +15,9 @@ export async function getStaticPaths() {
 
   console.log("eventsnya", events);
 
-  const postResult = events.map(post => ({
-    params: { slug: post.slug },
-    props: { post },
+  const postResult = events.map(event => ({
+    params: { slug: event.slug },
+    props: { event },
   }));
 
   const pagePaths = getPageNumbers(events.length).map(pageNum => ({
@@ -30,6 +30,8 @@ export async function getStaticPaths() {
 const { slug } = Astro.params;
 const { event } = Astro.props;
 
+console.log("ini >> ", Astro.props.event);
+
 const events = await getCollection("event");
 
 const sortedEvents = getSortedEvents(events);
@@ -40,4 +42,4 @@ const pagination = getPagination({
 });
 ---
 
-{event ? <EventDetails post={event} /> : <Events {...pagination} />}
+{event ? <EventDetails event={event} /> : <Events {...pagination} />}
