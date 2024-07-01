@@ -9,7 +9,7 @@ const events = await getCollection("event");
 const sortedEvents = getSortedEvents(events);
 
 const pagination = getPagination({
-  posts: sortedEvents,
+  events: sortedEvents,
   page: 1,
   isIndex: true,
 });
