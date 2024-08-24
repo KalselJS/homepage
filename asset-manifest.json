@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4618fffe.css",
+    "main.js": "/static/js/main.8cacb41f.js",
+    "static/js/453.c081adf5.chunk.js": "/static/js/453.c081adf5.chunk.js",
+    "static/media/InterVariable-Italic.woff2": "/static/media/InterVariable-Italic.e295f70fe3e2df296c7b.woff2",
+    "static/media/InterVariable.woff2": "/static/media/InterVariable.a0e477f2f1f9d2376fde.woff2",
+    "static/media/primeicons.svg": "/static/media/primeicons.6ed59f962963a4a73af2.svg",
+    "static/media/primeicons.eot": "/static/media/primeicons.ff0c4cd79b2ffca2de54.eot",
+    "static/media/primeicons.woff": "/static/media/primeicons.8931fda1930c3bd21e96.woff",
+    "static/media/primeicons.ttf": "/static/media/primeicons.a5c2a53d1ff7a9ff5933.ttf",
+    "static/media/primeicons.woff2": "/static/media/primeicons.024b32cc7bf399b1a847.woff2",
+    "static/media/scrollbar-down-active.svg": "/static/media/scrollbar-down-active.9e6c36d99f9a44af0a59.svg",
+    "static/media/scrollbar-down.svg": "/static/media/scrollbar-down.bb31b15d8f6b581cd557.svg",
+    "static/media/scrollbar-left-active.svg": "/static/media/scrollbar-left-active.9753c90356e4e957dece.svg",
+    "static/media/scrollbar-left.svg": "/static/media/scrollbar-left.57e14a59e2e12e671f57.svg",
+    "static/media/scrollbar-up-active.svg": "/static/media/scrollbar-up-active.98d9f1d4dd226c31b9b2.svg",
+    "static/media/scrollbar-up.svg": "/static/media/scrollbar-up.334fb488071faea9e313.svg",
+    "static/media/scrollbar-right-active.svg": "/static/media/scrollbar-right-active.c48e9adad8da075461dd.svg",
+    "static/media/scrollbar-right.svg": "/static/media/scrollbar-right.292ec98b3ff0988bfa07.svg",
+    "index.html": "/index.html",
+    "main.4618fffe.css.map": "/static/css/main.4618fffe.css.map",
+    "main.8cacb41f.js.map": "/static/js/main.8cacb41f.js.map",
+    "453.c081adf5.chunk.js.map": "/static/js/453.c081adf5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4618fffe.css",
+    "static/js/main.8cacb41f.js"
+  ]
+}
